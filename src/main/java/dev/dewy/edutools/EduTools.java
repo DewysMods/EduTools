@@ -21,6 +21,7 @@ package dev.dewy.edutools;
 import dev.dewy.edutools.proxy.CommonProxy;
 import dev.dewy.edutools.utils.Constants;
 
+import dev.dewy.edutools.utils.EduToolsLogger;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.*;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -44,21 +45,39 @@ public class EduTools
     @SidedProxy(clientSide = Constants.CLIENT_PROXY_PATH, serverSide = Constants.COMMON_PROXY_PATH, modId = Constants.MOD_ID)
     public static CommonProxy proxy;
 
+    public static EduToolsLogger logger = EduToolsLogger.createEduToolsLogger(Constants.MOD_NAME);
+
     @EventHandler
     public void onPreInit(FMLPreInitializationEvent event)
     {
+        logger.logWarn("\n" +
+                " ____        __               ______                    ___              \n" +
+                "/\\  _`\\     /\\ \\             /\\__  _\\                  /\\_ \\             \n" +
+                "\\ \\ \\L\\_\\   \\_\\ \\    __  __  \\/_/\\ \\/    ___     ___   \\//\\ \\      ____  \n" +
+                " \\ \\  _\\L   /'_` \\  /\\ \\/\\ \\    \\ \\ \\   / __`\\  / __`\\   \\ \\ \\    /',__\\ \n" +
+                "  \\ \\ \\L\\ \\/\\ \\L\\ \\ \\ \\ \\_\\ \\    \\ \\ \\ /\\ \\L\\ \\/\\ \\L\\ \\   \\_\\ \\_ /\\__, `\\\n" +
+                "   \\ \\____/\\ \\___,_\\ \\ \\____/     \\ \\_\\\\ \\____/\\ \\____/   /\\____\\\\/\\____/\n" +
+                "    \\/___/  \\/__,_ /  \\/___/       \\/_/ \\/___/  \\/___/    \\/____/ \\/___/ \n" +
+                "                                                                         \n" +
+                "                                                                         ");
+        logger.logWarn("Starting EduTools " + Constants.VERSION_TECHNICAL);
+
         proxy.onPreInit(event);
     }
 
     @EventHandler
     public void onInit(FMLInitializationEvent event)
     {
+        logger.logWarn("Starting initialisation processes for EduTools...");
+
         proxy.onInit(event);
     }
 
     @EventHandler
     public void onPostInit(FMLPostInitializationEvent event)
     {
+        logger.logWarn("Starting post initialisation processes for EduTools...");
+
         proxy.onPostInit(event);
     }
 }

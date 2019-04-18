@@ -18,6 +18,7 @@
 
 package dev.dewy.edutools.config;
 
+import dev.dewy.edutools.EduTools;
 import dev.dewy.edutools.proxy.CommonProxy;
 import dev.dewy.edutools.utils.Constants;
 import net.minecraftforge.common.config.Configuration;
@@ -26,6 +27,8 @@ public class EduToolsConfig
 {
     public static void readConfig()
     {
+        EduTools.logger.logInfo("Reading mod config file...");
+
         Configuration cfg = CommonProxy.configuration;
 
         try
@@ -36,6 +39,8 @@ public class EduToolsConfig
         }
         catch (Exception e)
         {
+            EduTools.logger.logError("Oes noes! It looks like there was a problem loading the mod config file! D:");
+
             e.printStackTrace();
         }
         finally
