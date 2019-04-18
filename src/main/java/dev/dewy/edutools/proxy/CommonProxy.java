@@ -19,6 +19,7 @@
 package dev.dewy.edutools.proxy;
 
 import dev.dewy.edutools.config.EduToolsConfig;
+import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -51,5 +52,10 @@ public class CommonProxy
         {
             configuration.save();
         }
+    }
+
+    public void registerItemRenderer(Item item, int metadata, String id)
+    {
+
     }
 }
