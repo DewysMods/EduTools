@@ -1,0 +1,20 @@
+[
+  {
+    "modid": "edutools",
+    "name": "EduTools",
+    "description": "What if you could learn with Minecraft outside of an official school..?",
+    "version": "$version",
+    "mcversion": "$mcversion",
+    "url": "https://github.com/dewymod/EduTools",
+    "updateUrl": "https://update.dewy.dev/edutools/forgeupdate.json",
+    "authorList": [
+      "iBuyMountainDew (Dewy)"
+    ],
+    "credits": "",
+    "logoFile": "logo.png",
+    "screenshots": [
+    ],
+    "parent":"",
+    "dependencies": ["forge"]
+  }
+]
