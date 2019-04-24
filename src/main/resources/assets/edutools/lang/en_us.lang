@@ -1,1 +1,34 @@
 item.aluminium_oxide.name=Aluminium Oxide
+item.ammonia.name=Ammonia
+item.barium_sulfate.name=Barium Sulfate
+item.benzene.name=Benzene
+item.boron_trioxide.name=Boron Trioxide
+item.calcium_bromide.name=Calcium Bromide
+item.crude_oil.name=Crude Oil
+item.glue.name=Glue (Cyanoacrylate)
+item.hydrogen_peroxide.name=Hydrogen Peroxide
+item.iron_sulfide.name=Iron Sulfide
+item.latex.name=Latex
+item.lithium_hydride.name=Lithium Hydride
+item.luminol.name=Luminol
+item.lye.name=Lye
+item.magnesium_nitrate.name=Magnesium Nitrate
+item.magnesium_oxide.name=Magnesium Oxide
+item.polyethylene.name=Polyethylene
+item.potassium_iodide.name=Potassium Iodide
+item.salt.name=Salt
+item.soap.name=Soap
+item.sodium_acetate.name=Sodium Acetate
+item.sodium_fluoride.name=Sodium Fluoride
+item.sodium_hydride.name=Sodium Hydride
+item.sodium_hypochlorite.name=Sodium Hypochlorite
+item.sodium_oxide.name=Sodium Oxide
+item.sulfate.name=Sulfate
+
+item.calcium_chloride.name=Calcium Chloride
+item.cerium_chloride.name=Cerium Chloride
+item.mercuric_chloride.name=Mercuric Chloride
+item.potassium_chloride.name=Potassium Chloride
+item.tungsten_chloride.name=Tungsten Chloride
+
+item.unknown_compound.name=Unknown Compound

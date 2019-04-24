@@ -19,6 +19,7 @@
 package dev.dewy.edutools.items;
 
 import dev.dewy.edutools.init.ETItems;
+import net.minecraft.creativetab.CreativeTabs;
 
 public class ItemCompoundBase extends ItemBase
 {
@@ -26,6 +27,8 @@ public class ItemCompoundBase extends ItemBase
     {
         setUnlocalizedName(name);
         setRegistryName(name);
+
+        setCreativeTab(CreativeTabs.MATERIALS);
 
         ETItems.ITEMS.add(this);
     }
